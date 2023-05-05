@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Advanced search</title>
+        <div class="navbar">
+            <a href="index.html" class="navbar" style = "margin-top: 43px">Google Search</a>
+        </div>
+
+        <!-- Google logo -->
+        <div>
+            <img src="googlelogo.png" alt="Google logo" class = "smalllogo">
+        </div>
+
+        <!-- Page title -->
+        <div>
+            <p style = "margin-left: 35px; color: #d93025; font-size: 20px">Advanced search</p>
+        </div>
+        <hr>
+    </head>
+
+    <body>
+            <!-- Forms -->
+            <label style = "margin-left: 35px; margin-top: 15px;">Find pages with...</label>
+            <div class = "advanced_center">
+                <form class = "advanced" action="https://google.com/search" method = "get">
+            <div class = row>
+                <div class ="left_text">
+                    <p>all these words:</p>
+                </div>
+                <input type="text" autocomplete = "off" autofocus id="advanced_form" name = "as_q">
+            <div class ="right_text">
+                <p>Type the important words: <span class="monospace">tri-colour rat terrier</span></p>
+            </div>
+        </div>
+
+        <div class = row>
+            <div class ="left_text">
+                <p>this exact word or phrase:</p>
+            </div>
+            <input type="text" autocomplete = "off" autofocus id="advanced_form" name = "as_epq">
+            <div class ="right_text">
+                <p>Put exact words in quotes<span class="monospace"> "rat terrier"</span></p>
+            </div>
+        </div>
+
+        <div class = row>
+            <div class ="left_text">
+                <p>any of these words:</p>
+            </div>
+            <input type="text" autocomplete = "off" autofocus id="advanced_form" name = "as_oq">
+            <div class ="right_text">
+                <p>Type OR between all the words you want: <span class="monospace">miniature OR standart</p>
+            </div>
+        </div>
+
+        <div class = row>
+            <div class ="left_text">
+                <p>none of these words:</p>
+            </div>
+            <input type="text" autocomplete = "off" autofocus id="advanced_form" name = "as_eq";>
+            <div class ="right_text">
+                <p>Put a minus sign just before words you don't want<span class="monospace">-rodent, -"Jack Russel"</p>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <input type="submit" id="advanced_button" value="Advanced search">
+        </form>
+    </div>
+</body>
+</html>
